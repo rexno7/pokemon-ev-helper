@@ -7,12 +7,17 @@
     <script type="text/javascript" src="ev-helper.js"></script>
   </head>
 
-  <body onload="pokemonCounter('body')">
-    <div id="bulbasaur" class="stat-counter" onload="pokemonCounter('bulbasaur')">
-      <div class="stat-name">HP</div>
-      <button type="button" class="stat-plus" onclick="increment('bulbasaur')" id='bulbasaur-plus'>+</button>
-      <button type="button" class="stat-minus" onclick="decrement('bulbasaur')" id='bulbasaur-minus'>-</button>
-      <div class="stat-value" id="bulbasaur-hp-value">200</div>
+  <body>
+    <div>
+      <input type="text" id="add-pokemon-text" />
+      <button 
+        type="button"
+        id="add-pokemon-btn" 
+        onclick="newEvCounter()"
+      >
+        Add Pokemon
+      </button>
     </div>
+    <div id='pokemon-evs-table'></div>
   </body>
 </html>
