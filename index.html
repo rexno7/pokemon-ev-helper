@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Pokemon EV Helper</title>
+    <link rel="stylesheet" href="index.css" />
+    <script type="text/javascript" src="ev-helper.js"></script>
+  </head>
+
+  <body onload="pokemonCounter('body')">
+    <div id="bulbasaur" class="stat-counter" onload="pokemonCounter('bulbasaur')">
+      <div class="stat-name">HP</div>
+      <button type="button" class="stat-plus" onclick="increment('bulbasaur')" id='bulbasaur-plus'>+</button>
+      <button type="button" class="stat-minus" onclick="decrement('bulbasaur')" id='bulbasaur-minus'>-</button>
+      <div class="stat-value" id="bulbasaur-hp-value">200</div>
+    </div>
+  </body>
+</html>
